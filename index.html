@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Popup</title>
+</head>
+<body>
+    <div class="container">
+        <button type="submit" class="btn" onclick="addPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="images/checkmark.png" alt="green-checkmark">
+            <h2>Thank you!</h2>
+            <p>Your details have successfully been submitted. Thanks!</p>
+            <button type="button" class="btn-1" onclick="removePopup()">OK</button>
+        </div>
+    </div>
+<script>
+    let popup = document.getElementById("popup");
+
+    function addPopup() {
+        popup.classList.add("add-popup");
+    }
+
+    function removePopup() {
+        popup.classList.remove("add-popup");
+    }
+
+</script>
+</body>
+</html>
